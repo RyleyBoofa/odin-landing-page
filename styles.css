@@ -67,12 +67,12 @@ section {
     color: #fff;
 }
 
-.navbar a {
+a {
     color: #e5e7eb;
     text-decoration: none;
 }
 
-.navbar a:hover {
+a:hover {
     color: #fff;
     font-weight: 500;
 }
@@ -102,24 +102,42 @@ section {
     color: #f9faf8;
     font-size: 48px;
     font-weight: 900;
+    margin-bottom: 1rem;
 }
 
 .header p {
     color: #e5e7eb;
 }
 
+.header-bold {
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
 .header .container {
     justify-content: space-between;
     flex-wrap: wrap;
+    gap: 2rem;
 }
 
-.header .container > * {
+.header-text {
     flex: 1;
-    max-width: 500px;
+    max-width: 600px;
+}
+
+.header img {
+    flex: 1;
+    max-width: 400px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.6);
+}
+
+.information {
+    color: #1f2937;
 }
 
 .information h2 {
-    color: #1f2937;
     font-size: 36px;
     font-weight: 900;
     margin-bottom: 2rem;
@@ -139,7 +157,18 @@ section {
 }
 
 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     max-width: 175px;
+}
+
+.card img {
+    border: 2px solid #1f2937;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgba(50, 50, 50, 0.6);
+    margin-bottom: 0.5rem;
 }
 
 .testimonial {
@@ -187,4 +216,19 @@ section {
 .footer {
     background-color: #1f2937;
     color: #f9faf8;
+}
+
+.cat-pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cat-pic img {
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(200, 200, 200, 0.6);
+    max-height: 100vh;
+    margin-bottom: 0.5rem;
 }
